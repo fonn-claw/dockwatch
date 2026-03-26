@@ -54,11 +54,11 @@
 
 ### Compliance & Reporting
 
-- [ ] **COMP-01**: Compliance dashboard showing required vs completed vs overdue maintenance
-- [ ] **COMP-02**: Audit trail logging every action with who/what/when
-- [ ] **COMP-03**: Generate PDF compliance reports suitable for insurance/regulatory review
-- [ ] **COMP-04**: Safety-critical items (electrical, fire, environmental) flagged with stricter tracking
-- [ ] **COMP-05**: Exportable maintenance history per asset
+- [x] **COMP-01**: Compliance dashboard showing required vs completed vs overdue maintenance
+- [x] **COMP-02**: Audit trail logging every action with who/what/when
+- [x] **COMP-03**: Generate PDF compliance reports suitable for insurance/regulatory review
+- [x] **COMP-04**: Safety-critical items (electrical, fire, environmental) flagged with stricter tracking
+- [x] **COMP-05**: Exportable maintenance history per asset
 
 ### Cost Tracking
 
@@ -134,11 +134,11 @@
 | SCHED-04 | Phase 3 | Complete |
 | SCHED-05 | Phase 3 | Complete |
 | SCHED-06 | Phase 3 | Complete |
-| COMP-01 | Phase 3 | Pending |
-| COMP-02 | Phase 3 | Pending |
-| COMP-03 | Phase 3 | Pending |
-| COMP-04 | Phase 3 | Pending |
-| COMP-05 | Phase 3 | Pending |
+| COMP-01 | Phase 3 | Complete |
+| COMP-02 | Phase 3 | Complete |
+| COMP-03 | Phase 3 | Complete |
+| COMP-04 | Phase 3 | Complete |
+| COMP-05 | Phase 3 | Complete |
 | COST-01 | Phase 3 | Complete |
 | COST-02 | Phase 3 | Complete |
 | COST-03 | Phase 3 | Complete |

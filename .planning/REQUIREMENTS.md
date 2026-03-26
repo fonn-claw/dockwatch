@@ -35,12 +35,12 @@
 
 ### Preventive Maintenance Schedules
 
-- [ ] **SCHED-01**: Manager can create recurring maintenance tasks with frequency (weekly/monthly/quarterly/annual)
-- [ ] **SCHED-02**: Schedule templates available by asset type
-- [ ] **SCHED-03**: System auto-generates work orders when a scheduled task comes due
-- [ ] **SCHED-04**: Next due date anchored to schedule (not completion date) to prevent drift
-- [ ] **SCHED-05**: Compliance tracking: percentage of scheduled tasks completed on time
-- [ ] **SCHED-06**: Seasonal awareness: tasks can be flagged as seasonal (spring-only, summer-only, year-round)
+- [x] **SCHED-01**: Manager can create recurring maintenance tasks with frequency (weekly/monthly/quarterly/annual)
+- [x] **SCHED-02**: Schedule templates available by asset type
+- [x] **SCHED-03**: System auto-generates work orders when a scheduled task comes due
+- [x] **SCHED-04**: Next due date anchored to schedule (not completion date) to prevent drift
+- [x] **SCHED-05**: Compliance tracking: percentage of scheduled tasks completed on time
+- [x] **SCHED-06**: Seasonal awareness: tasks can be flagged as seasonal (spring-only, summer-only, year-round)
 
 ### Dashboard
 
@@ -128,12 +128,12 @@
 | WO-05 | Phase 2 | Complete |
 | WO-06 | Phase 2 | Complete |
 | WO-07 | Phase 2 | Complete |
-| SCHED-01 | Phase 3 | Pending |
-| SCHED-02 | Phase 3 | Pending |
-| SCHED-03 | Phase 3 | Pending |
-| SCHED-04 | Phase 3 | Pending |
-| SCHED-05 | Phase 3 | Pending |
-| SCHED-06 | Phase 3 | Pending |
+| SCHED-01 | Phase 3 | Complete |
+| SCHED-02 | Phase 3 | Complete |
+| SCHED-03 | Phase 3 | Complete |
+| SCHED-04 | Phase 3 | Complete |
+| SCHED-05 | Phase 3 | Complete |
+| SCHED-06 | Phase 3 | Complete |
 | COMP-01 | Phase 3 | Pending |
 | COMP-02 | Phase 3 | Pending |
 | COMP-03 | Phase 3 | Pending |

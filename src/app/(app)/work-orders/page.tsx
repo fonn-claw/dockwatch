@@ -43,7 +43,7 @@ export default async function WorkOrdersPage({ searchParams }: WorkOrdersPagePro
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">
+          <h1 className="text-2xl font-bold tracking-tight">
             {isManager ? "Work Orders" : "My Work Orders"}
           </h1>
           <p className="text-muted-foreground">

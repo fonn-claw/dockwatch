@@ -65,7 +65,7 @@ export function WorkOrderCard({ workOrder }: { workOrder: WorkOrderData }) {
   const isOverdue = dueDate && isPast(dueDate) && !isToday(dueDate) && workOrder.status !== "completed" && workOrder.status !== "verified";
 
   return (
-    <Card className={`border-l-4 ${PRIORITY_BORDER[workOrder.priority] ?? "border-l-gray-400"}`}>
+    <Card className={`border-l-4 hover:shadow-md transition-shadow ${PRIORITY_BORDER[workOrder.priority] ?? "border-l-gray-400"}`}>
       <CardHeader className="pb-2">
         <div className="flex items-start justify-between gap-2">
           <Link

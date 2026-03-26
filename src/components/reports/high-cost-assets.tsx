@@ -70,7 +70,7 @@ export function HighCostAssets({ assets }: HighCostAssetsProps) {
               assets.map((asset, idx) => (
                 <TableRow
                   key={asset.assetId}
-                  className={idx < 3 ? "bg-amber-50 dark:bg-amber-950/20" : ""}
+                  className={`hover:bg-muted/50 ${idx < 3 ? "bg-amber-50 dark:bg-amber-950/20" : ""}`}
                 >
                   <TableCell className="font-medium text-muted-foreground">
                     {idx + 1}

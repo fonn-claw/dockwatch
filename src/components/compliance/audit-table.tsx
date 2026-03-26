@@ -117,13 +117,13 @@ export function AuditTable({
   return (
     <div className="space-y-4">
       {/* Filter Bar */}
-      <div className="flex flex-wrap gap-3 items-end">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:flex lg:flex-wrap lg:items-end">
         <div>
           <label className="text-xs font-medium text-muted-foreground block mb-1">
             Entity Type
           </label>
           <select
-            className="h-9 rounded-md border border-input bg-background px-3 text-sm"
+            className="h-9 min-h-[44px] sm:min-h-0 rounded-md border border-input bg-background px-3 text-sm"
             value={entityType ?? ""}
             onChange={(e) => updateFilter("entityType", e.target.value)}
           >
@@ -140,7 +140,7 @@ export function AuditTable({
             User
           </label>
           <select
-            className="h-9 rounded-md border border-input bg-background px-3 text-sm"
+            className="h-9 min-h-[44px] sm:min-h-0 rounded-md border border-input bg-background px-3 text-sm"
             value={userId ?? ""}
             onChange={(e) => updateFilter("userId", e.target.value)}
           >
@@ -159,7 +159,7 @@ export function AuditTable({
           </label>
           <input
             type="date"
-            className="h-9 rounded-md border border-input bg-background px-3 text-sm"
+            className="h-9 min-h-[44px] sm:min-h-0 rounded-md border border-input bg-background px-3 text-sm"
             value={dateFrom ?? ""}
             onChange={(e) => updateFilter("dateFrom", e.target.value)}
           />
@@ -171,7 +171,7 @@ export function AuditTable({
           </label>
           <input
             type="date"
-            className="h-9 rounded-md border border-input bg-background px-3 text-sm"
+            className="h-9 min-h-[44px] sm:min-h-0 rounded-md border border-input bg-background px-3 text-sm"
             value={dateTo ?? ""}
             onChange={(e) => updateFilter("dateTo", e.target.value)}
           />
@@ -179,6 +179,7 @@ export function AuditTable({
       </div>
 
       {/* Table */}
+      <div className="rounded-lg border overflow-x-auto">
       <Table>
         <TableHeader>
           <TableRow>
@@ -202,7 +203,7 @@ export function AuditTable({
             </TableRow>
           ) : (
             auditData.results.map((entry) => (
-              <TableRow key={entry.id}>
+              <TableRow key={entry.id} className="hover:bg-muted/50">
                 <TableCell className="text-muted-foreground text-xs">
                   {formatDateTime(entry.createdAt)}
                 </TableCell>
@@ -226,6 +227,7 @@ export function AuditTable({
           )}
         </TableBody>
       </Table>
+      </div>
 
       {/* Pagination */}
       {totalPages > 1 && (

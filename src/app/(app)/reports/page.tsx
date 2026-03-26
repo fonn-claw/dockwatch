@@ -53,8 +53,8 @@ export default async function CostReportsPage({ searchParams }: ReportsPageProps
     <div className="space-y-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
-            <DollarSign className="h-8 w-8" />
+          <h1 className="text-2xl font-bold tracking-tight flex items-center gap-2">
+            <DollarSign className="h-6 w-6" />
             Cost Reports
           </h1>
           <p className="text-muted-foreground">
@@ -82,7 +82,7 @@ export default async function CostReportsPage({ searchParams }: ReportsPageProps
       <CostSummaryCards summary={summary} totalBudgetCents={totalBudgetCents} />
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Budget vs Actual</h2>
+        <h2 className="text-lg font-semibold mb-3">Budget vs Actual</h2>
         <BudgetComparison
           budgetData={budgetComparison}
           periodLabel={PERIOD_LABELS[period]}
@@ -90,12 +90,12 @@ export default async function CostReportsPage({ searchParams }: ReportsPageProps
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">Cost Breakdown</h2>
+        <h2 className="text-lg font-semibold mb-3">Cost Breakdown</h2>
         <CostBreakdownTable byDock={byDock} byCategory={byCategory} />
       </div>
 
       <div>
-        <h2 className="text-xl font-semibold mb-4">High-Cost Assets</h2>
+        <h2 className="text-lg font-semibold mb-3">High-Cost Assets</h2>
         <HighCostAssets assets={highCostAssets} />
       </div>
     </div>

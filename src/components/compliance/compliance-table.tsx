@@ -123,7 +123,7 @@ export function ComplianceTable({ schedules }: ComplianceTableProps) {
                 : "text-red-600";
 
             return (
-              <TableRow key={s.id}>
+              <TableRow key={s.id} className="hover:bg-muted/50">
                 <TableCell className="font-medium">
                   {s.name}
                   {s.isSafetyCritical && (

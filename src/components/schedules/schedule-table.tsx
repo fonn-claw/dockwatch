@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { ScheduleFormDialog } from "./schedule-form-dialog";
 import { deleteSchedule } from "@/lib/actions/schedules";
 import { ASSET_TYPE_LABELS } from "@/components/assets/asset-filters";
-import { ShieldAlert, Pencil, Trash2 } from "lucide-react";
+import { CalendarClock, ShieldAlert, Pencil, Trash2 } from "lucide-react";
 import type { SessionData } from "@/types";
 
 interface Asset {
@@ -123,14 +123,18 @@ export function ScheduleTable({
               <TableRow>
                 <TableCell
                   colSpan={isManager ? 9 : 8}
-                  className="h-24 text-center text-muted-foreground"
+                  className="h-32 text-center"
                 >
-                  No schedules found.
+                  <div className="flex flex-col items-center gap-2">
+                    <CalendarClock className="h-8 w-8 text-muted-foreground/50" />
+                    <p className="font-medium text-foreground">No maintenance schedules yet</p>
+                    <p className="text-sm text-muted-foreground">Create a schedule to begin tracking preventive maintenance.</p>
+                  </div>
                 </TableCell>
               </TableRow>
             ) : (
               schedules.map((schedule) => (
-                <TableRow key={schedule.id}>
+                <TableRow key={schedule.id} className="hover:bg-muted/50">
                   <TableCell className="font-medium">
                     {schedule.name}
                   </TableCell>

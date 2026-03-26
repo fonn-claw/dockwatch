@@ -144,7 +144,7 @@ export function CostBreakdownTable({ byDock, byCategory }: CostBreakdownTablePro
                 </TableRow>
               ) : (
                 dockSort.sorted.map((d) => (
-                  <TableRow key={d.dockId}>
+                  <TableRow key={d.dockId} className="hover:bg-muted/50">
                     <TableCell className="font-medium">{d.dockName}</TableCell>
                     <TableCell>{formatCurrency(d.partsCents)}</TableCell>
                     <TableCell>{formatCurrency(d.laborCents)}</TableCell>
@@ -182,7 +182,7 @@ export function CostBreakdownTable({ byDock, byCategory }: CostBreakdownTablePro
                 </TableRow>
               ) : (
                 catSort.sorted.map((c) => (
-                  <TableRow key={c.category}>
+                  <TableRow key={c.category} className="hover:bg-muted/50">
                     <TableCell className="font-medium">{capitalize(c.category)}</TableCell>
                     <TableCell>{formatCurrency(c.partsCents)}</TableCell>
                     <TableCell>{formatCurrency(c.laborCents)}</TableCell>

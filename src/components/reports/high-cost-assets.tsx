@@ -45,7 +45,7 @@ export function HighCostAssets({ assets }: HighCostAssetsProps) {
       <CardHeader>
         <CardTitle className="text-lg">High-Cost Assets</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>

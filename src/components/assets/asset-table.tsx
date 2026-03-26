@@ -62,14 +62,14 @@ export function AssetTable({ assets, docks, session }: AssetTableProps) {
           {assets.length} asset{assets.length !== 1 ? "s" : ""}
         </p>
         {isManager && (
-          <Button size="sm" onClick={() => setShowCreateDialog(true)}>
+          <Button size="sm" onClick={() => setShowCreateDialog(true)} className="min-h-[44px]">
             <Plus className="mr-1.5 h-4 w-4" />
             New Asset
           </Button>
         )}
       </div>
 
-      <div className="rounded-lg border">
+      <div className="rounded-lg border overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>

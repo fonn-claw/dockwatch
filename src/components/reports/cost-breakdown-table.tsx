@@ -124,7 +124,7 @@ export function CostBreakdownTable({ byDock, byCategory }: CostBreakdownTablePro
         <CardHeader>
           <CardTitle className="text-lg">By Dock</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="overflow-x-auto">
           <Table>
             <TableHeader>
               <TableRow>
@@ -162,7 +162,7 @@ export function CostBreakdownTable({ byDock, byCategory }: CostBreakdownTablePro
         <CardHeader>
           <CardTitle className="text-lg">By Category</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="overflow-x-auto">
           <Table>
             <TableHeader>
               <TableRow>

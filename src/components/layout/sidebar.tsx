@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Anchor, ChevronLeft, ChevronRight, Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
+import { Anchor, ChevronLeft, ChevronRight } from "lucide-react";
+import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { SidebarNav } from "./sidebar-nav";
 import { UserMenu } from "./user-menu";
 import { useSidebarState } from "./app-shell";
@@ -17,8 +15,7 @@ interface SidebarProps {
 }
 
 export function Sidebar({ name, email, role }: SidebarProps) {
-  const { collapsed, setCollapsed } = useSidebarState();
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const { collapsed, setCollapsed, mobileOpen, setMobileOpen } = useSidebarState();
 
   return (
     <>
@@ -65,18 +62,6 @@ export function Sidebar({ name, email, role }: SidebarProps) {
 
       {/* Mobile Sidebar (Sheet) */}
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-        <SheetTrigger
-          render={
-            <Button
-              variant="ghost"
-              size="icon"
-              className="lg:hidden shrink-0"
-              aria-label="Open navigation menu"
-            />
-          }
-        >
-          <Menu className="h-5 w-5" />
-        </SheetTrigger>
         <SheetContent side="left" className="w-64 bg-slate-900 p-0 border-slate-700 [&>button]:text-white">
           <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
           <div className="flex flex-col h-full">

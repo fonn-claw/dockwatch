@@ -90,6 +90,7 @@ export function ComplianceTable({ schedules }: ComplianceTableProps) {
   );
 
   return (
+    <div className="rounded-lg border overflow-x-auto">
     <Table>
       <TableHeader>
         <TableRow>
@@ -160,5 +161,6 @@ export function ComplianceTable({ schedules }: ComplianceTableProps) {
         )}
       </TableBody>
     </Table>
+    </div>
   );
 }

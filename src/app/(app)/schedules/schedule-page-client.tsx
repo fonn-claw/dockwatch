@@ -48,7 +48,7 @@ export function SchedulePageClient({
     <>
       {isManager && (
         <div className="flex justify-end">
-          <Button size="sm" onClick={() => setShowCreate(true)}>
+          <Button size="sm" onClick={() => setShowCreate(true)} className="min-h-[44px]">
             <Plus className="mr-1.5 h-4 w-4" />
             New Schedule
           </Button>

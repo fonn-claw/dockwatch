@@ -67,7 +67,7 @@ export default async function CostReportsPage({ searchParams }: ReportsPageProps
             <Link
               key={p}
               href={`/reports?period=${p}`}
-              className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
+              className={`px-3 py-1.5 min-h-[44px] sm:min-h-0 flex items-center text-sm font-medium rounded-md transition-colors ${
                 period === p
                   ? "bg-background text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"

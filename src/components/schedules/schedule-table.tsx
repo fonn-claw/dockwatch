@@ -103,7 +103,7 @@ export function ScheduleTable({
         </p>
       </div>
 
-      <div className="rounded-lg border">
+      <div className="rounded-lg border overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow>
@@ -188,7 +188,7 @@ export function ScheduleTable({
                         <Button
                           variant="ghost"
                           size="icon"
-                          className="h-7 w-7"
+                          className="h-8 w-8 min-h-[44px] min-w-[44px] sm:min-h-0 sm:min-w-0"
                           onClick={() => setEditSchedule(schedule)}
                         >
                           <Pencil className="h-3.5 w-3.5" />

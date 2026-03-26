@@ -75,12 +75,12 @@ export function ScheduleFilters({
   }
 
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
       <Select
         value={currentAssetType ?? ""}
         onValueChange={(val) => updateFilter("assetType", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All types" />
         </SelectTrigger>
         <SelectContent>
@@ -97,7 +97,7 @@ export function ScheduleFilters({
         value={currentFrequency ?? ""}
         onValueChange={(val) => updateFilter("frequency", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All frequencies" />
         </SelectTrigger>
         <SelectContent>
@@ -114,7 +114,7 @@ export function ScheduleFilters({
         value={currentSeason ?? ""}
         onValueChange={(val) => updateFilter("season", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All seasons" />
         </SelectTrigger>
         <SelectContent>
@@ -131,7 +131,7 @@ export function ScheduleFilters({
         value={currentSafetyCritical ?? ""}
         onValueChange={(val) => updateFilter("safetyCritical", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All" />
         </SelectTrigger>
         <SelectContent>
@@ -147,7 +147,7 @@ export function ScheduleFilters({
         value={currentStatus ?? ""}
         onValueChange={(val) => updateFilter("status", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All statuses" />
         </SelectTrigger>
         <SelectContent>

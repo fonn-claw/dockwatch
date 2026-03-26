@@ -52,7 +52,7 @@ export function SafetyCriticalTable({ schedules }: SafetyCriticalTableProps) {
           ({schedules.length} items)
         </span>
       </div>
-      <div className="rounded-lg border border-red-200 dark:border-red-900/50 overflow-hidden">
+      <div className="rounded-lg border border-red-200 dark:border-red-900/50 overflow-x-auto">
         <Table>
           <TableHeader>
             <TableRow className="bg-red-50/50 dark:bg-red-950/20">

@@ -78,7 +78,7 @@ export function AssetFilters({
         value={currentDockId ?? ""}
         onValueChange={(val) => updateFilter("dockId", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All docks" />
         </SelectTrigger>
         <SelectContent>
@@ -95,7 +95,7 @@ export function AssetFilters({
         value={currentAssetType ?? ""}
         onValueChange={(val) => updateFilter("assetType", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="All types" />
         </SelectTrigger>
         <SelectContent>
@@ -112,7 +112,7 @@ export function AssetFilters({
         value={currentMinCondition ?? ""}
         onValueChange={(val) => updateFilter("minCondition", val as string)}
       >
-        <SelectTrigger className="w-full">
+        <SelectTrigger className="w-full min-h-[44px] sm:min-h-0">
           <SelectValue placeholder="Any condition" />
         </SelectTrigger>
         <SelectContent>

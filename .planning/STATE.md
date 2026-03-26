@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 01-01-PLAN.md
-last_updated: "2026-03-26T00:36:03Z"
+status: unknown
+stopped_at: Completed 01-02-PLAN.md
+last_updated: "2026-03-26T00:45:32.361Z"
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -23,27 +23,27 @@ See: .planning/PROJECT.md (updated 2026-03-26)
 
 ## Current Position
 
-Phase: 01 (foundation-auth) — EXECUTING
-Plan: 2 of 2
+Phase: 01 (foundation-auth) — COMPLETE
+Plan: 2 of 2 (all complete)
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 1
-- Average duration: 8 min
-- Total execution time: 0.13 hours
+- Total plans completed: 2
+- Average duration: 7 min
+- Total execution time: 0.22 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation-auth | 1/2 | 8 min | 8 min |
+| 01-foundation-auth | 2/2 | 13 min | 7 min |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-01 (8 min)
-- Trend: baseline
+- Last 5 plans: 01-01 (8 min), 01-02 (5 min)
+- Trend: improving
 
 *Updated after each plan completion*
 
@@ -61,6 +61,9 @@ Recent decisions affecting current work:
 - [01-01]: Middleware uses cookie presence check only, actual auth in server actions
 - [01-01]: Login action uses useActionState (React 19) for form state management
 - [01-01]: Root page reads session to redirect by role, falls back to /login
+- [01-02]: Used shared React context (AppShell) for sidebar collapse state sync
+- [01-02]: base-ui render prop pattern instead of Radix asChild for component composition
+- [01-02]: Defense-in-depth: requireAuth() in layout + requireRole() in every page
 
 ### Pending Todos
 
@@ -74,6 +77,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T00:36:03Z
-Stopped at: Completed 01-01-PLAN.md
-Resume file: .planning/phases/01-foundation-auth/01-01-SUMMARY.md
+Last session: 2026-03-26T00:45:32.359Z
+Stopped at: Completed 01-02-PLAN.md
+Resume file: None

@@ -11,9 +11,9 @@
 - [x] **AUTH-02**: User session persists across browser refresh
 - [x] **AUTH-03**: User can log out from any page
 - [x] **AUTH-04**: Role-based access control enforced on every server action (manager, crew, inspector)
-- [ ] **AUTH-05**: Manager sees all features including schedules, reports, and cost tracking
-- [ ] **AUTH-06**: Crew sees assigned work orders and can log completions
-- [ ] **AUTH-07**: Inspector sees compliance dashboards and audit trails
+- [x] **AUTH-05**: Manager sees all features including schedules, reports, and cost tracking
+- [x] **AUTH-06**: Crew sees assigned work orders and can log completions
+- [x] **AUTH-07**: Inspector sees compliance dashboards and audit trails
 
 ### Asset Registry
 
@@ -113,9 +113,9 @@
 | AUTH-02 | Phase 1 | Complete |
 | AUTH-03 | Phase 1 | Complete |
 | AUTH-04 | Phase 1 | Complete |
-| AUTH-05 | Phase 1 | Pending |
-| AUTH-06 | Phase 1 | Pending |
-| AUTH-07 | Phase 1 | Pending |
+| AUTH-05 | Phase 1 | Complete |
+| AUTH-06 | Phase 1 | Complete |
+| AUTH-07 | Phase 1 | Complete |
 | ASSET-01 | Phase 2 | Pending |
 | ASSET-02 | Phase 2 | Pending |
 | ASSET-03 | Phase 2 | Pending |

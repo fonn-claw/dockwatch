@@ -62,12 +62,12 @@ Plans:
   3. Every mutation in the system is logged in an audit trail with who/what/when; inspector can browse the audit trail
   4. Manager can generate a PDF compliance report and export maintenance history per asset
   5. Work orders track parts and labor costs; manager can view cost breakdowns by dock and category, with monthly/quarterly/annual views and budget vs actual comparison
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — Schedule CRUD server actions, auto-generation engine, schedule list page with sortable table, filters, and form dialog
+- [ ] 03-02-PLAN.md — Compliance dashboard with status cards and period selector, safety-critical section, audit trail browser, PDF compliance report and asset history export
+- [ ] 03-03-PLAN.md — Cost tracking reports page with summary cards, breakdown by dock and category, budget vs actual comparison, high-cost asset identification
 
 ### Phase 4: Dashboard, Seed Data & Polish
 **Goal**: The hero dashboard tells the marina's maintenance story at a glance, backed by realistic demo data and polished for LinkedIn showcase

@@ -17,11 +17,11 @@
 
 ### Asset Registry
 
-- [ ] **ASSET-01**: User can view catalog of marina assets (docks, slips, pedestals, lights, fire equipment, fuel pumps)
-- [ ] **ASSET-02**: Each asset displays location, install date, warranty info, and maintenance history
-- [ ] **ASSET-03**: Asset condition rating (1-5) updated after each inspection
-- [ ] **ASSET-04**: Manager can create, edit, and deactivate assets
-- [ ] **ASSET-05**: User can filter/search assets by dock, type, and condition
+- [x] **ASSET-01**: User can view catalog of marina assets (docks, slips, pedestals, lights, fire equipment, fuel pumps)
+- [x] **ASSET-02**: Each asset displays location, install date, warranty info, and maintenance history
+- [x] **ASSET-03**: Asset condition rating (1-5) updated after each inspection
+- [x] **ASSET-04**: Manager can create, edit, and deactivate assets
+- [x] **ASSET-05**: User can filter/search assets by dock, type, and condition
 
 ### Work Orders
 
@@ -116,11 +116,11 @@
 | AUTH-05 | Phase 1 | Complete |
 | AUTH-06 | Phase 1 | Complete |
 | AUTH-07 | Phase 1 | Complete |
-| ASSET-01 | Phase 2 | Pending |
-| ASSET-02 | Phase 2 | Pending |
-| ASSET-03 | Phase 2 | Pending |
-| ASSET-04 | Phase 2 | Pending |
-| ASSET-05 | Phase 2 | Pending |
+| ASSET-01 | Phase 2 | Complete |
+| ASSET-02 | Phase 2 | Complete |
+| ASSET-03 | Phase 2 | Complete |
+| ASSET-04 | Phase 2 | Complete |
+| ASSET-05 | Phase 2 | Complete |
 | WO-01 | Phase 2 | Pending |
 | WO-02 | Phase 2 | Pending |
 | WO-03 | Phase 2 | Pending |

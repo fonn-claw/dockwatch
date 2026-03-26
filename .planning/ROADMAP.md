@@ -79,12 +79,12 @@ Plans:
   3. Seed script populates Sunset Harbor Marina with 4 docks, 60 slips, 120+ assets, 80+ historical work orders, 30+ schedules, and 5 overdue items -- data tells a coherent story
   4. All three demo accounts (manager, crew, inspector) log in and see role-appropriate data with realistic content
   5. Every view is mobile-responsive and uses the industrial color palette with safety status colors; the app looks professional enough for a LinkedIn showcase
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
-- [ ] 04-03: TBD
+- [ ] 04-01-PLAN.md — Comprehensive seed script with narrative data for Sunset Harbor Marina (docks, assets, schedules, work orders, costs, audit logs)
+- [ ] 04-02-PLAN.md — Hero dashboard page with status cards, health scores, maintenance calendar, activity feed, and cost summary
+- [ ] 04-03-PLAN.md — Mobile responsiveness and UI polish pass across all pages
 
 ## Progress
 

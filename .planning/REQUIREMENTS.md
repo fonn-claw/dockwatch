@@ -70,13 +70,13 @@
 
 ### Demo Data & Polish
 
-- [ ] **DEMO-01**: Seed script creates Sunset Harbor Marina with 4 docks (A-D) and 60 slips
-- [ ] **DEMO-02**: 120+ seeded assets across all types
-- [ ] **DEMO-03**: 30+ maintenance schedules with mixed frequencies
-- [ ] **DEMO-04**: 80+ historical work orders going back 6 months with realistic narrative
-- [ ] **DEMO-05**: 10 currently open work orders in various states
-- [ ] **DEMO-06**: 5 overdue items showing compliance gaps
-- [ ] **DEMO-07**: 3 demo accounts (manager, crew, inspector) with correct roles
+- [x] **DEMO-01**: Seed script creates Sunset Harbor Marina with 4 docks (A-D) and 60 slips
+- [x] **DEMO-02**: 120+ seeded assets across all types
+- [x] **DEMO-03**: 30+ maintenance schedules with mixed frequencies
+- [x] **DEMO-04**: 80+ historical work orders going back 6 months with realistic narrative
+- [x] **DEMO-05**: 10 currently open work orders in various states
+- [x] **DEMO-06**: 5 overdue items showing compliance gaps
+- [x] **DEMO-07**: 3 demo accounts (manager, crew, inspector) with correct roles
 - [ ] **DEMO-08**: Mobile-responsive design across all views
 - [ ] **DEMO-09**: Professional industrial/operational UI with safety status colors
 
@@ -151,13 +151,13 @@
 | DASH-05 | Phase 4 | Pending |
 | DASH-06 | Phase 4 | Pending |
 | DASH-07 | Phase 4 | Pending |
-| DEMO-01 | Phase 4 | Pending |
-| DEMO-02 | Phase 4 | Pending |
-| DEMO-03 | Phase 4 | Pending |
-| DEMO-04 | Phase 4 | Pending |
-| DEMO-05 | Phase 4 | Pending |
-| DEMO-06 | Phase 4 | Pending |
-| DEMO-07 | Phase 4 | Pending |
+| DEMO-01 | Phase 4 | Complete |
+| DEMO-02 | Phase 4 | Complete |
+| DEMO-03 | Phase 4 | Complete |
+| DEMO-04 | Phase 4 | Complete |
+| DEMO-05 | Phase 4 | Complete |
+| DEMO-06 | Phase 4 | Complete |
+| DEMO-07 | Phase 4 | Complete |
 | DEMO-08 | Phase 4 | Pending |
 | DEMO-09 | Phase 4 | Pending |
 

@@ -62,11 +62,11 @@
 
 ### Cost Tracking
 
-- [ ] **COST-01**: Log parts and labor costs per work order
-- [ ] **COST-02**: Track costs by dock and by category (electrical, structural, plumbing, cosmetic)
-- [ ] **COST-03**: Monthly/quarterly/annual cost report views
-- [ ] **COST-04**: Budget vs actual comparison per category
-- [ ] **COST-05**: Identify high-cost assets as replacement candidates
+- [x] **COST-01**: Log parts and labor costs per work order
+- [x] **COST-02**: Track costs by dock and by category (electrical, structural, plumbing, cosmetic)
+- [x] **COST-03**: Monthly/quarterly/annual cost report views
+- [x] **COST-04**: Budget vs actual comparison per category
+- [x] **COST-05**: Identify high-cost assets as replacement candidates
 
 ### Demo Data & Polish
 
@@ -139,11 +139,11 @@
 | COMP-03 | Phase 3 | Pending |
 | COMP-04 | Phase 3 | Pending |
 | COMP-05 | Phase 3 | Pending |
-| COST-01 | Phase 3 | Pending |
-| COST-02 | Phase 3 | Pending |
-| COST-03 | Phase 3 | Pending |
-| COST-04 | Phase 3 | Pending |
-| COST-05 | Phase 3 | Pending |
+| COST-01 | Phase 3 | Complete |
+| COST-02 | Phase 3 | Complete |
+| COST-03 | Phase 3 | Complete |
+| COST-04 | Phase 3 | Complete |
+| COST-05 | Phase 3 | Complete |
 | DASH-01 | Phase 4 | Pending |
 | DASH-02 | Phase 4 | Pending |
 | DASH-03 | Phase 4 | Pending |

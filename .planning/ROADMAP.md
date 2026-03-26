@@ -95,5 +95,5 @@ Phases execute in numeric order: 1 > 2 > 3 > 4
 |-------|----------------|--------|-----------|
 | 1. Foundation & Auth | 2/2 | Complete | 2026-03-26 |
 | 2. Assets & Work Orders | 3/3 | Complete   | 2026-03-26 |
-| 3. Schedules, Compliance & Cost | 0/3 | Not started | - |
+| 3. Schedules, Compliance & Cost | 2/3 | In Progress|  |
 | 4. Dashboard, Seed Data & Polish | 0/3 | Not started | - |

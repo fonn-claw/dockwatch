@@ -44,13 +44,13 @@
 
 ### Dashboard
 
-- [ ] **DASH-01**: At-a-glance status indicators: overdue (red), due soon (yellow), on track (green)
-- [ ] **DASH-02**: Maintenance health score per dock and marina-wide, weighted by asset criticality
-- [ ] **DASH-03**: Upcoming maintenance calendar view (week/month)
-- [ ] **DASH-04**: Recent activity feed showing completed work orders and new issues
-- [ ] **DASH-05**: Cost summary cards showing monthly/quarterly spend
-- [ ] **DASH-06**: Dashboard is the landing page for manager role
-- [ ] **DASH-07**: Big status cards with clear visual hierarchy -- hero feature quality
+- [x] **DASH-01**: At-a-glance status indicators: overdue (red), due soon (yellow), on track (green)
+- [x] **DASH-02**: Maintenance health score per dock and marina-wide, weighted by asset criticality
+- [x] **DASH-03**: Upcoming maintenance calendar view (week/month)
+- [x] **DASH-04**: Recent activity feed showing completed work orders and new issues
+- [x] **DASH-05**: Cost summary cards showing monthly/quarterly spend
+- [x] **DASH-06**: Dashboard is the landing page for manager role
+- [x] **DASH-07**: Big status cards with clear visual hierarchy -- hero feature quality
 
 ### Compliance & Reporting
 
@@ -144,13 +144,13 @@
 | COST-03 | Phase 3 | Complete |
 | COST-04 | Phase 3 | Complete |
 | COST-05 | Phase 3 | Complete |
-| DASH-01 | Phase 4 | Pending |
-| DASH-02 | Phase 4 | Pending |
-| DASH-03 | Phase 4 | Pending |
-| DASH-04 | Phase 4 | Pending |
-| DASH-05 | Phase 4 | Pending |
-| DASH-06 | Phase 4 | Pending |
-| DASH-07 | Phase 4 | Pending |
+| DASH-01 | Phase 4 | Complete |
+| DASH-02 | Phase 4 | Complete |
+| DASH-03 | Phase 4 | Complete |
+| DASH-04 | Phase 4 | Complete |
+| DASH-05 | Phase 4 | Complete |
+| DASH-06 | Phase 4 | Complete |
+| DASH-07 | Phase 4 | Complete |
 | DEMO-01 | Phase 4 | Complete |
 | DEMO-02 | Phase 4 | Complete |
 | DEMO-03 | Phase 4 | Complete |

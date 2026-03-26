@@ -12,7 +12,7 @@ Marina operators can see at a glance what maintenance is overdue, what's due soo
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Role-based auth (manager, crew, inspector) with appropriate access controls — Phase 1
 
 ### Active
 
@@ -22,7 +22,6 @@ Marina operators can see at a glance what maintenance is overdue, what's due soo
 - [ ] Asset registry with condition ratings, lifecycle tracking, and maintenance history
 - [ ] Compliance reporting with audit trail, PDF generation, and safety-critical item flagging
 - [ ] Cost tracking with per-work-order costs, category breakdowns, and budget vs actual
-- [ ] Role-based auth (manager, crew, inspector) with appropriate access controls
 - [ ] Demo data: Sunset Harbor Marina with 4 docks, 60 slips, 120+ assets, 80+ historical work orders
 - [ ] Mobile-responsive design for field crew use
 - [ ] Professional industrial/operational UI suitable for LinkedIn showcase
@@ -58,10 +57,10 @@ Marina operators can see at a glance what maintenance is overdue, what's due soo
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Neon Postgres over SQLite | Vercel serverless requires external DB | — Pending |
-| iron-session for auth | Simpler than NextAuth for role-based demo with fixed accounts | — Pending |
+| Neon Postgres over SQLite | Vercel serverless requires external DB | ✓ Good |
+| iron-session for auth | Simpler than NextAuth for role-based demo with fixed accounts | ✓ Good |
 | Placeholder images for photos | Avoids file upload complexity for demo | — Pending |
-| Coarse phase granularity | Fewer broader phases for single-session build efficiency | — Pending |
+| Coarse phase granularity | Fewer broader phases for single-session build efficiency | ✓ Good |
 
 ---
-*Last updated: 2026-03-26 after initialization*
+*Last updated: 2026-03-26 after Phase 1 completion*

@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { workOrders, users } from "@/lib/db/schema";
+import { workOrders, users, auditLogs } from "@/lib/db/schema";
 import { and, asc, eq, gte, isNull, lte, desc, or, inArray } from "drizzle-orm";
 import type { WorkOrderStatus, Priority } from "@/types";
 
@@ -96,6 +96,29 @@ export async function getWorkOrderDetail(id: number) {
       parts: true,
     },
   });
+}
+
+export async function getWorkOrderActivity(workOrderId: number) {
+  const results = await db.query.auditLogs.findMany({
+    where: and(
+      eq(auditLogs.entityType, "work_order"),
+      eq(auditLogs.entityId, workOrderId)
+    ),
+    with: {
+      user: {
+        columns: { name: true },
+      },
+    },
+    orderBy: [desc(auditLogs.createdAt)],
+  });
+
+  return results.map((row) => ({
+    id: row.id,
+    action: row.action,
+    metadata: row.metadata as Record<string, unknown> | null,
+    userName: row.user?.name ?? "System",
+    createdAt: row.createdAt,
+  }));
 }
 
 export async function getCrewUsers() {

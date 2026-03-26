@@ -45,11 +45,12 @@ Plans:
   3. Manager can create a work order with assignee, priority, due date, and type; work order appears in the list
   4. Crew member can advance a work order through created > assigned > in-progress > completed, logging notes, parts, and time spent; invalid status jumps are rejected
   5. Work order list supports filtering by dock, status, priority, assignee, and date range, and is usable on a mobile-width screen
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Shared utilities (audit logger, transition map) and complete asset registry with data table, filters, detail panel, CRUD dialog
+- [ ] 02-02-PLAN.md — Work order server actions with enforced transitions, card-based list page with filters, creation form
+- [ ] 02-03-PLAN.md — Work order detail page with tabs (overview, activity timeline, parts/labor, photos)
 
 ### Phase 3: Schedules, Compliance & Cost
 **Goal**: The system proactively generates maintenance work orders on schedule, tracks compliance with audit trails, and reports costs
@@ -92,7 +93,7 @@ Phases execute in numeric order: 1 > 2 > 3 > 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Auth | 0/2 | Not started | - |
-| 2. Assets & Work Orders | 0/2 | Not started | - |
+| 1. Foundation & Auth | 2/2 | Complete | 2026-03-26 |
+| 2. Assets & Work Orders | 0/3 | Planning complete | - |
 | 3. Schedules, Compliance & Cost | 0/3 | Not started | - |
 | 4. Dashboard, Seed Data & Polish | 0/3 | Not started | - |

@@ -13,7 +13,7 @@ DockWatch delivers a marina preventive maintenance platform in four phases: foun
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Foundation & Auth** - Database schema, iron-session auth with role guards, app shell with navigation
-- [ ] **Phase 2: Assets & Work Orders** - Asset registry CRUD and work order management with status workflow
+- [x] **Phase 2: Assets & Work Orders** - Asset registry CRUD and work order management with status workflow (completed 2026-03-26)
 - [ ] **Phase 3: Schedules, Compliance & Cost** - Recurring maintenance schedules, compliance reporting with audit trail and PDF export, cost tracking
 - [ ] **Phase 4: Dashboard, Seed Data & Polish** - Hero dashboard with health scores and calendar, narrative seed data, mobile responsiveness, professional UI polish
 
@@ -94,6 +94,6 @@ Phases execute in numeric order: 1 > 2 > 3 > 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Auth | 2/2 | Complete | 2026-03-26 |
-| 2. Assets & Work Orders | 0/3 | Planning complete | - |
+| 2. Assets & Work Orders | 3/3 | Complete   | 2026-03-26 |
 | 3. Schedules, Compliance & Cost | 0/3 | Not started | - |
 | 4. Dashboard, Seed Data & Polish | 0/3 | Not started | - |

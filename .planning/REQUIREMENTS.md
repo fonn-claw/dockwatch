@@ -28,8 +28,8 @@
 - [x] **WO-01**: Manager can create work orders with assignee, priority (urgent/high/normal/low), due date, and type (preventive/corrective/inspection/emergency)
 - [x] **WO-02**: Work order status workflow: created → assigned → in-progress → completed → verified
 - [x] **WO-03**: Status transitions enforced server-side (no impossible state jumps)
-- [ ] **WO-04**: Crew can update work order status and log notes, parts used, and time spent
-- [ ] **WO-05**: Work orders display placeholder photos (before/after simulation)
+- [x] **WO-04**: Crew can update work order status and log notes, parts used, and time spent
+- [x] **WO-05**: Work orders display placeholder photos (before/after simulation)
 - [x] **WO-06**: User can filter/search work orders by dock, status, priority, assignee, and date range
 - [x] **WO-07**: Work order list is mobile-friendly for field crew use
 
@@ -124,8 +124,8 @@
 | WO-01 | Phase 2 | Complete |
 | WO-02 | Phase 2 | Complete |
 | WO-03 | Phase 2 | Complete |
-| WO-04 | Phase 2 | Pending |
-| WO-05 | Phase 2 | Pending |
+| WO-04 | Phase 2 | Complete |
+| WO-05 | Phase 2 | Complete |
 | WO-06 | Phase 2 | Complete |
 | WO-07 | Phase 2 | Complete |
 | SCHED-01 | Phase 3 | Pending |

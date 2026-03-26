@@ -1,31 +1,80 @@
 import { requireRole } from "@/lib/auth/guards";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ClipboardList } from "lucide-react";
+import { getWorkOrders, getCrewUsers } from "@/lib/queries/work-orders";
+import { getDocks } from "@/lib/queries/assets";
+import { WorkOrderFilters } from "@/components/work-orders/work-order-filters";
+import { WorkOrderList } from "@/components/work-orders/work-order-list";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Plus } from "lucide-react";
 
-export default async function WorkOrdersPage() {
-  await requireRole(["manager", "crew"]);
+interface WorkOrdersPageProps {
+  searchParams: Promise<{
+    dockId?: string;
+    status?: string;
+    priority?: string;
+    assigneeId?: string;
+    dueDateFrom?: string;
+    dueDateTo?: string;
+  }>;
+}
+
+export default async function WorkOrdersPage({ searchParams }: WorkOrdersPageProps) {
+  const session = await requireRole(["manager", "crew"]);
+  const params = await searchParams;
+
+  const filters = {
+    dockId: params.dockId ? Number(params.dockId) : undefined,
+    status: params.status || undefined,
+    priority: params.priority || undefined,
+    assigneeId: params.assigneeId ? Number(params.assigneeId) : undefined,
+    dueDateFrom: params.dueDateFrom || undefined,
+    dueDateTo: params.dueDateTo || undefined,
+  };
+
+  const [workOrders, docks, users] = await Promise.all([
+    getWorkOrders(filters, session.role, session.userId),
+    getDocks(),
+    getCrewUsers(),
+  ]);
+
+  const isManager = session.role === "manager";
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Work Orders</h1>
-        <p className="text-muted-foreground">
-          Create, assign, and track maintenance work orders
-        </p>
-      </div>
-      <Card>
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <ClipboardList className="h-5 w-5" />
-            Coming in Phase 2
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">
+            {isManager ? "Work Orders" : "My Work Orders"}
+          </h1>
           <p className="text-muted-foreground">
-            Create, assign, and track maintenance work orders with photos, parts, and time tracking.
+            {isManager
+              ? "Create, assign, and track maintenance work orders"
+              : "View and update your assigned work orders"}
           </p>
-        </CardContent>
-      </Card>
+        </div>
+        {isManager && (
+          <Button render={<Link href="/work-orders/new" />} className="min-h-[44px]">
+            <Plus className="h-4 w-4 mr-1.5" />
+            New Work Order
+          </Button>
+        )}
+      </div>
+
+      <WorkOrderFilters
+        docks={JSON.parse(JSON.stringify(docks))}
+        users={JSON.parse(JSON.stringify(users))}
+        currentDockId={params.dockId}
+        currentStatus={params.status}
+        currentPriority={params.priority}
+        currentAssigneeId={params.assigneeId}
+        currentDueDateFrom={params.dueDateFrom}
+        currentDueDateTo={params.dueDateTo}
+        showAllFilters={isManager}
+      />
+
+      <WorkOrderList
+        workOrders={JSON.parse(JSON.stringify(workOrders))}
+      />
     </div>
   );
 }

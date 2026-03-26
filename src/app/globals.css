@@ -128,3 +128,18 @@
     @apply font-sans;
   }
 }
+
+/* DockWatch Status Colors */
+:root {
+  --status-good: #22c55e;
+  --status-due-soon: #eab308;
+  --status-overdue: #f97316;
+  --status-critical: #ef4444;
+}
+
+@theme inline {
+  --color-status-good: var(--status-good);
+  --color-status-due-soon: var(--status-due-soon);
+  --color-status-overdue: var(--status-overdue);
+  --color-status-critical: var(--status-critical);
+}

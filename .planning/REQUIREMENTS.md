@@ -77,8 +77,8 @@
 - [x] **DEMO-05**: 10 currently open work orders in various states
 - [x] **DEMO-06**: 5 overdue items showing compliance gaps
 - [x] **DEMO-07**: 3 demo accounts (manager, crew, inspector) with correct roles
-- [ ] **DEMO-08**: Mobile-responsive design across all views
-- [ ] **DEMO-09**: Professional industrial/operational UI with safety status colors
+- [x] **DEMO-08**: Mobile-responsive design across all views
+- [x] **DEMO-09**: Professional industrial/operational UI with safety status colors
 
 ## v2 Requirements
 
@@ -158,8 +158,8 @@
 | DEMO-05 | Phase 4 | Complete |
 | DEMO-06 | Phase 4 | Complete |
 | DEMO-07 | Phase 4 | Complete |
-| DEMO-08 | Phase 4 | Pending |
-| DEMO-09 | Phase 4 | Pending |
+| DEMO-08 | Phase 4 | Complete |
+| DEMO-09 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 44 total
